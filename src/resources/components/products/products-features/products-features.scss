@@ -1,0 +1,26 @@
+@import "/src/assets/sass/variable";
+
+.product-features-wrapper {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        li {
+            color: $mine-shaft;
+            margin-top: 1rem;
+            font-size: 15px;
+            list-style: circle;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+}

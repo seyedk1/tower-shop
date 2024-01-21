@@ -1,0 +1,220 @@
+@import "/src/assets/sass/variable";
+
+.cart-container {
+    display: flex;
+    flex: 1;
+
+    .cart-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 0.6;
+        margin-top: 3rem;
+
+        .prent-cart-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid;
+            border-bottom-color: rgba($color: $dove-gray, $alpha: 0.6);
+            padding-bottom: 1rem;
+
+            p {
+                margin-bottom: 0;
+                margin-right: 1rem;
+            }
+        }
+
+        .parent-cards {
+            display: flex;
+            flex: 0.8;
+            justify-content: center;
+            border: 1px solid $white;
+            border-radius: 15px;
+            box-shadow: $box-shadow;
+            padding: 1rem 0px;
+            margin: 1rem 0;
+
+            .product-img-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                margin-left: 30px;
+
+                .parent-img {
+                    background-color: $white;
+                    border-radius: 50%;
+                    box-shadow: 0px 0.5px 10px 0px rgb(0, 0, 0, 0.16);
+                    padding: 21px;
+
+                    .cart-img {
+                        width: 5rem;
+                    }
+                }
+            }
+
+            .cart-details-wrapper {
+                display: flex;
+                flex: 0.9;
+                flex-direction: column;
+
+                .parent-product-info {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 2px dashed;
+                    border-bottom-color: rgba($color: $dove-gray, $alpha: 0.2);
+
+                    .parent-product-name {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 2rem;
+
+                        p {
+                            text-align: right;
+                        }
+                    }
+
+                    .parent-product-count {
+                        display: flex;
+                        align-items: center;
+
+                        .min-max-icon {
+                            font-size: 13px;
+                        }
+
+                        .count {
+                            padding: 0 10px;
+                            border: 1px solid $dove-gray;
+                            border-radius: 5px;
+                            margin: 0 5px;
+                        }
+                    }
+
+                    .product-price {
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .prent-other-options {
+                    display: flex;
+                    margin-top: 20px;
+
+                    .option {
+                        display: flex;
+                        margin-left: 2rem;
+                        align-items: center;
+
+                        .color {
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 50%;
+                            background-color: purple;
+                        }
+
+                        p {
+                            margin-bottom: 0;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .preview-order-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex: 0.3;
+        margin-top: 3rem;
+
+        .preview-order-content {
+            display: flex;
+            flex-direction: column;
+            background-color: $wild-sand;
+            border-radius: 10px;
+            box-shadow: $box-shadow;
+
+            .parent-order-title {
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid;
+                border-bottom-color: rgba($color: $dove-gray, $alpha: 0.3);
+                padding-bottom: 13px;
+                margin: 1rem;
+
+                .order-text {
+                    color: $mine-shaft;
+                    margin-bottom: 0;
+                }
+            }
+
+            .parent-up-order {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 2px solid;
+                border-color: rgba($color: $dove-gray, $alpha: 0.3);
+                padding: 0 1rem;
+                margin: 1rem;
+
+                .row-order {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin: 1rem;
+                    }
+                }
+            }
+
+            .parent-down-order {
+                display: flex;
+                flex-direction: column;
+                padding: 0 1rem;
+                margin: 1rem;
+
+                .parent-row-feature {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 1rem;
+
+                    .parent-overall-order {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        p {
+                            margin: 1rem;
+                        }
+                    }
+
+                    .price-order {
+                        display: flex;
+
+                        p {
+                            margin: 1rem;
+                        }
+                    }
+                }
+
+                .parent-submit-order {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    margin-top: 2rem;
+
+                    .btn-submit-order {
+                        display: flex;
+                        flex: 1;
+                        justify-content: center;
+                        background-color: $pine-green;
+                        color: $white;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

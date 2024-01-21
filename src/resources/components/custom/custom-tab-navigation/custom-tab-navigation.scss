@@ -1,0 +1,86 @@
+@import "/src/assets/sass/variable";
+
+#tab-navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: $white;
+    height: auto;
+
+    .parent-tabs {
+        padding: 15px 23px !important;
+    }
+
+    .parent-header-tabs {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        // padding: 15px 5em;
+        position: relative;
+
+        .ul-content {
+            border: none !important;
+            border-bottom: 1px solid $dove-gray !important;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+            list-style: none;
+            background-color: $white;
+            // border: 1px solid $dove-gray;
+            font-size: 17px;
+            font-size: 1.214rem;
+            line-height: 1.294;
+            letter-spacing: -0.4px;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 0.5px 3px 0px rgb(0, 0, 0, 0.16);
+
+            .li-style {
+                background-color: $white;
+                padding: 15px 3em;
+                // border-left: 1px solid $dove-gray;
+                position: relative;
+                color: $mine-shaft;
+                cursor: pointer;
+
+                .tab-icon-style {
+                    margin-left: 7px;
+                    font-size: 22px;
+                }
+            }
+
+            .li-content {
+                font-size: 1rem;
+                background-color: $white;
+                padding: 15px 3em;
+                border-left: none !important;
+                position: relative;
+                color: #6d7179 !important;
+                cursor: pointer;
+
+                .tab-icon-style {
+                    margin-left: 7px;
+                    font-size: 22px;
+                }
+            }
+
+            .is-selected {
+                margin-bottom: -1px;
+                background-color: $wild-sand;
+                color: $pine-green !important;
+            }
+
+            .active-selected {
+                margin-bottom: -1px;
+                color: $pine-green !important;
+                border-bottom: 3px solid $pine-green;
+            }
+
+            .first-li {
+                margin-right: -1px;
+            }
+        }
+    }
+}

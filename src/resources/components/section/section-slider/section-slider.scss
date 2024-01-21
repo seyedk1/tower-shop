@@ -1,0 +1,203 @@
+@import "src/assets/sass/variable";
+@import "src/assets/sass/media";
+
+.parent-sliders-container {
+    @media (max-width: 321px) {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .parent-sliders {
+        display: flex;
+        margin: 0 7em 0 5em;
+
+        @media (max-width: 1031px) {
+            margin: 0 2em;
+        }
+
+        @media (max-width: 700px) {
+            margin: 0 1em;
+        }
+
+        @media (max-width: 576px) {
+            margin: 0;
+        }
+
+        .own-slider {
+            @media (max-width: 1760px) {
+                flex: 0 0 80%;
+                max-width: 80%;
+            }
+
+            @media (max-width: 1445px) {
+                flex: 0 0 75%;
+                max-width: 75%;
+            }
+
+            @include breakpoint(large) {
+                flex: 0 0 70%;
+                max-width: 70%;
+            }
+
+            @media (max-width: 1031px) {
+                flex: 0 0 100%;
+                max-width: 100%;
+                height: 25em !important;
+            }
+
+            @include breakpoint(small) {
+                height: 20em !important;
+            }
+
+            @media (max-width: 484px) {
+                height: 15em !important;
+            }
+
+            @media (max-width: 365px) {
+                height: 12em !important;
+            }
+
+            @media (max-width: 315px) {
+                height: 10em !important;
+            }
+
+            .each-slider-image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .left-slider-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            position: relative;
+            margin: 0.8rem 0em;
+            border-radius: 10px;
+            padding: 2rem 0px 2rem 0;
+            background: rgba(254, 172, 176, 0.7);
+            margin-right: 10px;
+
+            @media (max-width: 1760px) {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+
+            @media (max-width: 1445px) {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+
+            @include breakpoint(large) {
+                flex: 0 0 30%;
+                max-width: 30%;
+            }
+
+            @media (max-width: 1031px) {
+                display: none;
+            }
+
+            .parent-discount-badge {
+                .discount-badge {
+                    width: 50px;
+                    position: absolute;
+                    top: -6px;
+                    right: 30px;
+                }
+
+                span {
+                    position: absolute;
+                    top: 10px;
+                    right: 2.7em;
+                    font-size: 17px;
+                    color: $white;
+                }
+            }
+
+            .right-slide-circle {
+                width: 85px;
+                background-color: white;
+                height: 50px;
+                border-top: 46px solid transparent;
+                top: 60px;
+                position: absolute;
+                border-top-left-radius: 50%;
+                border-bottom: 56px solid transparent;
+                border-bottom-left-radius: 50%;
+                // box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.3);
+                opacity: 0.37;
+                margin-right: -45px;
+            }
+
+            .left-slide-circle {
+                width: 85px;
+                background-color: $white;
+                /* height: 50px; */
+                border-top: 46px solid transparent;
+                top: 60px;
+                left: 0px;
+                position: absolute;
+                border-top-right-radius: 50%;
+                border-bottom: 56px solid transparent;
+                border-bottom-right-radius: 50%;
+                /* box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 29%); */
+                opacity: 0.37;
+                margin-left: -40px;
+            }
+
+            .parent-image {
+                display: flex;
+                flex-direction: column;
+                flex: 0.3;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 35px;
+                }
+            }
+
+            .parent-content-slider {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                justify-content: space-between;
+                flex: 0.7;
+                margin-top: 2em;
+
+                .parent-title {
+                    display: flex;
+                    margin-top: 2em;
+
+                    h6 {
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+
+                .parent-description {
+                    display: flex;
+                    margin-top: 1em;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+
+                .parent-time {
+                    display: flex;
+                    margin-top: 1em;
+
+                    span {
+                        color: #e25959;
+                    }
+                }
+            }
+        }
+    }
+}

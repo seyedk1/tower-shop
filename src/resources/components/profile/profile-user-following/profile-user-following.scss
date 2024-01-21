@@ -1,0 +1,59 @@
+@import "/src/assets/sass/variable";
+
+.user-following-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+
+    .parent-shop-img {
+        display: flex;
+        justify-content: center;
+
+        .shop-img {
+            width: 6rem;
+            border-radius: 50%;
+        }
+    }
+
+    .parent-shop-name {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .shop-info-row {
+        display: flex;
+        margin-top: 1rem;
+
+        p {
+            color: $mine-shaft;
+            margin-bottom: 0;
+            margin-right: 15px;
+            text-align: right;
+        }
+    }
+    .last-info {
+        border-bottom: 2px dashed;
+        border-bottom-color: rgba($color: $dove-gray, $alpha: 0.3);
+        padding-bottom: 15px;
+    }
+
+    .parent-observ-shop-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+
+        .observ-shop-btn {
+            display: flex;
+            flex: 0.8;
+            justify-content: center;
+            background-color: $white;
+            border: 1px solid $pine-green;
+            color: $pine-green;
+        }
+    }
+}

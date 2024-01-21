@@ -1,0 +1,16 @@
+@import "/src/assets/sass/variable";
+
+.tab {
+    display: flex;
+    color: $black;
+    padding: 20px;
+    min-width: 800px;
+    // min-height: 400px;
+    background-color: $white;
+    margin-top: -16px;
+    height: auto;
+    box-shadow: $box-shadow;
+}
+.tab2 {
+    background-color: $white !important;
+}

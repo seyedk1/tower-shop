@@ -1,0 +1,72 @@
+@import "/src/assets/sass/variable";
+
+.favorite-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    position: relative;
+    margin: 1rem;
+
+    .delete-icon {
+        position: absolute;
+        left: 10px;
+        cursor: pointer;
+
+        &:hover {
+            fill: $mandy;
+        }
+    }
+
+    .favorite-card-up {
+        display: flex;
+        padding: 15px 0;
+
+        .parent-img-favorite {
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+
+            .favorite-img {
+                width: 5rem;
+            }
+        }
+
+        .parent-fav-product-name {
+            display: flex;
+            align-items: center;
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .favorite-card-down {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .parent-add-to-cart-btn {
+            display: flex;
+
+            .add-to-cart-btn {
+                background-color: $white;
+                color: $pine-green;
+                border: 1px solid $pine-green;
+                border-radius: 5px;
+            }
+        }
+
+        .parent-product-price {
+            display: flex;
+            align-items: center;
+
+            p {
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

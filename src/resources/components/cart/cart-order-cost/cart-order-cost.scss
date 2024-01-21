@@ -1,0 +1,110 @@
+@import "/src/assets/sass/variable";
+
+.parent-order-cost {
+    display: flex;
+    flex: 0.3;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .order-cost-content {
+        display: flex;
+        flex-direction: column;
+        flex: 0.8;
+        background-color: $white;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
+
+        .up-content {
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px dashed;
+            margin-right: 1rem;
+            margin-left: 1rem;
+            border-bottom-color: rgba($color: $dove-gray, $alpha: 0.3);
+
+            .each-row-order {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem;
+
+                &:first-child {
+                    margin-top: 3rem;
+                }
+
+                .parent-title-order {
+                    display: flex;
+                    align-items: center;
+
+                    h6 {
+                        color: $mine-shaft;
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+
+                .parent-price {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        color: $mine-shaft;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .down-content {
+            display: flex;
+            flex-direction: column;
+            padding-right: 1rem;
+            padding-left: 1rem;
+
+            .each-row-order {
+                display: flex;
+                justify-content: space-between;
+                margin: 1rem;
+
+                &:first-child {
+                    margin-top: 3rem;
+                }
+
+                .parent-title-order {
+                    display: flex;
+                    align-items: center;
+
+                    h6 {
+                        color: $mine-shaft;
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+
+                .parent-price {
+                    display: flex;
+                    align-items: center;
+
+                    span {
+                        color: $mine-shaft;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .parent-btn-order {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                margin-bottom: 1rem;
+
+                .btn-order {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    background-color: $pine-green;
+                    color: $white;
+                }
+            }
+        }
+    }
+}

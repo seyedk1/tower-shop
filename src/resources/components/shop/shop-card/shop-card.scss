@@ -1,0 +1,82 @@
+@import "src/assets/sass/variable";
+
+.parent-each-product {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+    height: fit-content;
+    margin: 0 8em;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 2em;
+    transition: all 0.2s ease-in-out;
+    padding-bottom: 30px;
+    padding-top: 15px;
+
+    .up-product-info {
+        display: flex;
+        flex: 1.5;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .parent-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3em;
+
+            .product-image {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .discount-exist {
+        margin-bottom: 1rem;
+    }
+
+    .down-product-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        .parent-shop-title {
+            display: flex;
+            margin-top: 5px;
+        }
+
+        .parent-shop-point--star--seen {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+
+            p {
+                margin-bottom: 0;
+                color: $mine-shaft;
+            }
+
+            span {
+                color: $mine-shaft;
+                opacity: 75%;
+            }
+        }
+
+        .seen-style {
+            margin-bottom: 2em;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 2px 17px 0 rgba(0, 0, 0, 0.09);
+        z-index: 11;
+        -ms-transform: scale(1.02); /* IE 9 */
+        -webkit-transform: scale(1.02); /* Safari 3-8 */
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+    }
+}

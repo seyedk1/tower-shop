@@ -1,0 +1,81 @@
+@import "src/assets/sass/variable";
+@import "src/assets/sass/media";
+
+.parent-header-products-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #707070;
+    flex: 1;
+    margin: 0 9em 0 7em;
+    margin-bottom: 10px;
+
+    @include breakpoint(large) {
+        margin: 0 3em;
+    }
+
+    @include breakpoint(small) {
+        margin: 0 2em;
+    }
+
+    @media (max-width: 476px) {
+        margin: 0 1em;
+    }
+
+    .parent-title--icon {
+        display: flex;
+        justify-content: space-around;
+
+        h4 {
+            margin-right: 10px;
+
+            @include breakpoint(small) {
+                font-size: 21px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 19px;
+            }
+
+            @media (max-width: 476px) {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .parent-text {
+        display: flex;
+
+        .more-products {
+            color: $pine-green;
+            font-weight: 500;
+
+            @include breakpoint(small) {
+                font-size: 15px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.slider-main {
+    margin: 0 9em;
+
+    @include breakpoint(large) {
+        margin: 0 3em;
+    }
+
+    @include breakpoint(small) {
+        margin: 0 2em;
+    }
+
+    @media (max-width: 476px) {
+        margin: 0 1em;
+    }
+
+    .hidden-arrows {
+        display: none;
+    }
+}

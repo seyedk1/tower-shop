@@ -1,0 +1,391 @@
+@import "/src/assets/sass/variable";
+
+.products-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .product-breadcrumb-wrapper {
+        display: flex;
+        margin: 5px 0;
+        padding: 0 3rem;
+
+        .parent-breadcrumb-text {
+            display: flex;
+
+            .path-icon {
+                transform: rotatez(180deg);
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .product-details-content {
+        display: flex;
+
+        .show-images-wrapper {
+            display: flex;
+            justify-content: center;
+            background-color: $wild-sand;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+
+            .show-small-cards-image-wrapper {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .each-small-card {
+                    border-radius: 10px;
+                    background-color: $white;
+                    box-shadow: $box-shadow;
+                    margin-top: 1.5em;
+                    padding: 1rem 1.5rem;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    img {
+                        width: 100px;
+                    }
+                }
+            }
+
+            .show-large-card-image-wrapper {
+                display: flex;
+                flex-direction: column;
+                background-color: $white;
+                border-radius: 7px;
+                box-shadow: $box-shadow;
+                margin-right: 15px;
+                padding: 3rem;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+
+        .product-features-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .each-row-features {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 2px dashed;
+                border-color: rgba($color: $dove-gray, $alpha: 0.2);
+                padding: 2.5rem 0;
+                margin-right: 1rem;
+
+                &:nth-last-child(2) {
+                    border-bottom: none;
+                }
+
+                &:first-child {
+                    padding: 0 0 15px 0;
+                }
+
+                .parent-title--points {
+                    display: flex;
+                    justify-content: space-between;
+
+                    h5 {
+                        color: $pine-green;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .parent-shop-name {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 18px;
+
+                    p {
+                        margin-bottom: 0;
+
+                        span {
+                            margin-right: 7px;
+                        }
+                    }
+                }
+
+                .price-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    .price-title {
+                        color: $mine-shaft;
+                    }
+
+                    .price {
+                        color: $mandy;
+                    }
+
+                    .discount-price {
+                        color: #6d6e71;
+                        text-decoration: line-through;
+                    }
+                }
+
+                .product-buy-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    .buy-count {
+                        color: $mine-shaft;
+                    }
+
+                    .increase--decrease-count-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                        flex: 0.3;
+
+                        .product-count {
+                            background-color: $white;
+                            color: $pine-green;
+                            box-shadow: $box-shadow;
+                            padding: 2px 10px;
+                            border-radius: 5px;
+                        }
+
+                        .parent-icon {
+                            display: flex;
+                            align-items: center;
+                            background-color: $pine-green;
+                            box-shadow: $box-shadow;
+                            padding: 0px 8px;
+                            border-radius: 5px;
+
+                            .min-max-icon {
+                                padding: 0;
+                                color: $white;
+                                text-align: center;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .product-size-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    .size-title {
+                        color: $mine-shaft;
+                    }
+
+                    .each-card-size {
+                        text-align: center;
+                        padding: 5px 15px;
+                        padding-top: 7px;
+                        border-radius: 7px;
+                        box-shadow: $box-shadow;
+                        background-color: $white;
+                        color: $mine-shaft;
+                    }
+
+                    .selected-size {
+                        background-color: $pine-green !important;
+                        color: $white !important;
+                    }
+                }
+
+                .colors-select-wrapper {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        margin-bottom: 0;
+                    }
+
+                    .color-title {
+                        color: $mine-shaft;
+                    }
+
+                    .parent-colors {
+                        display: flex;
+                        flex-wrap: wrap;
+
+                        .each-color {
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                            margin: 5px 11px;
+
+                            &:last-child {
+                                margin: 5px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .add-cart--wishlist-wrapper {
+                display: flex;
+                justify-content: space-evenly;
+                flex: 1;
+
+                .parent-add-cart {
+                    display: flex;
+                    flex: 0.9;
+
+                    .add-cart-btn {
+                        display: flex;
+                        flex: 1;
+                        justify-content: center;
+                        background-color: $pine-green;
+                        color: $white;
+
+                        .cart-icon {
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+                .parent-wishlist {
+                    display: flex;
+                    flex: 0.1;
+
+                    .wishlist-btn {
+                        background-color: $wild-sand;
+                        border-color: $pine-green;
+                    }
+                }
+            }
+        }
+
+        .more-information-product-wrapper {
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            box-shadow: $box-shadow;
+
+            .parent-follow-seller-btn {
+                display: flex;
+
+                .follow-seller-btn {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    background-color: $white;
+                    color: $mine-shaft;
+                    border-color: $pine-green;
+                    border-radius: 10px;
+                }
+            }
+
+            .shop-info-wrapper {
+                display: flex;
+                flex-direction: column;
+                border-bottom: 2px dashed;
+                border-color: rgba($color: $dove-gray, $alpha: 0.2);
+                padding-bottom: 1.4rem;
+                margin-top: 10px;
+
+                .parent-shop-image-name {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .shop-image {
+                        border-radius: 50%;
+                        width: 50px;
+                    }
+
+                    .shop-name {
+                        font-size: 19px;
+                        color: $mine-shaft;
+                        margin-right: 10px;
+                        margin-bottom: 0;
+                    }
+                }
+
+                .parent-shop-description {
+                    display: flex;
+                    justify-content: flex-start;
+
+                    .shop-description {
+                        text-align: right;
+                        line-height: 1.5;
+                        margin-bottom: 0;
+                        margin-top: 12px;
+                        color: $mine-shaft;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .guarantee-texts-wrapper {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+                align-items: center;
+
+                .parent-icon--text-guarantee {
+                    display: flex;
+                    align-items: center;
+
+                    p {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .parent-call-seller-btn {
+                display: flex;
+                justify-content: center;
+                border-bottom: 2px dashed;
+                border-color: rgba(112, 112, 112, 0.2);
+                padding-bottom: 14px;
+
+                .call-seller-btn {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+                    color: $pine-green;
+                    border: 1px solid $pine-green;
+                    border-radius: 10px;
+                }
+            }
+            .parent-see-shop-page {
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+
+                .see-shop-page {
+                    text-decoration: underline;
+                    margin-bottom: 0;
+                    color: $mine-shaft;
+                    margin-top: 10px;
+                    font-weight: bold;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+    }
+}

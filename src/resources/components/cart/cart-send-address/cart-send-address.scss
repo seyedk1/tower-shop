@@ -1,0 +1,99 @@
+@import "/src/assets/sass/variable";
+
+.send-address-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 9rem 0 7rem;
+
+    .parent-title-define-address {
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid;
+        border-bottom-color: rgba($color: $dove-gray, $alpha: 0.3);
+
+        .adress-title {
+            color: $mine-shaft;
+            margin-right: 1rem;
+        }
+    }
+
+    .parent-tabs-navigation {
+        margin-top: 1rem;
+
+        .custom-width {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+
+            .change-height {
+                min-height: auto;
+
+                .send-by-mail-wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    .each-row {
+                        display: flex;
+                        margin-top: 1rem;
+
+                        .text-title {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .parent-receive-checkbox {
+                        display: flex;
+                        margin-top: 1rem;
+                        justify-content: space-between;
+
+                        .each-row-checkbox {
+                            display: flex;
+
+                            .text-title {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .date--order-cost-wrapper {
+        display: flex;
+
+        .parent-date {
+            display: flex;
+            flex: 0.7;
+            justify-content: space-around;
+
+            .each-col-date {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+                align-items: center;
+
+                .date-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 1rem;
+                    border-radius: 10px;
+                    padding: 14px;
+                    border: 1px solid;
+                    border-color: rgba($color: $dove-gray, $alpha: 0.3);
+
+                    &:hover {
+                        cursor: pointer;
+                        border-color: rgba($color: $pine-green, $alpha: 1);
+                    }
+
+                    .date-text {
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+
+      
+    }
+}

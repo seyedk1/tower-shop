@@ -1,0 +1,117 @@
+@import "/src/assets/sass/variable";
+
+.profile-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 9rem 0 6rem;
+    margin-top: 2rem;
+
+    .profile-title {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid;
+        border-bottom-color: rgba($color: $dove-gray, $alpha: 0.3);
+        padding-bottom: 15px;
+
+        .my-profile {
+            display: flex;
+            align-items: center;
+
+            h5 {
+                margin-right: 15px;
+            }
+        }
+
+        .parent-logout-btn {
+            display: flex;
+            align-items: center;
+
+            .logout-btn {
+                padding: 7px 25px;
+                border: 1px solid $pine-green;
+                color: $pine-green;
+                border-radius: 7px;
+            }
+        }
+    }
+
+    .parent-last-orders-cards {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .parent-details {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .first-row-detail {
+            display: flex;
+            justify-content: flex-start;
+            background-color: $white;
+
+            p {
+                margin: 1rem 2rem;
+            }
+        }
+
+        .change-color-row {
+            background-color: #e5e5e5;
+        }
+
+        .preview-order-wrapper {
+            display: flex;
+            flex: 1;
+
+            .order-preview-content {
+                display: flex;
+                // flex-direction: column;
+                flex: 1;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+
+                .parent-row-details-text {
+                    display: flex;
+                    flex: 1;
+                    justify-content: flex-start;
+                }
+
+                .parent-each-product {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .parent-img {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1rem;
+                        margin-top: 1rem;
+
+                        img {
+                            width: 100px;
+                            background-color: $white;
+                            border-radius: 50%;
+                            box-shadow: 0px 0.5px 3px 1px rgb(0, 0, 0, 0.16);
+                            padding: 15px;
+                        }
+                    }
+
+                    .parent-product-info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .price {
+                            color: $dove-gray;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,185 @@
+@import "src/assets/sass/media";
+
+#main-container {
+    #category {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        scroll-snap-align: start;
+        justify-content: center;
+        margin-top: 2em;
+
+        @include breakpoint(large) {
+            display: none;
+        }
+
+        .category-down-section {
+            display: flex;
+            flex: 0.8;
+
+            .right-section {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                padding-left: 0;
+
+                .small-cards-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding-left: 0;
+
+                    .necklace-size {
+                        height: 26em;
+                        width: 26em;
+                        padding-left: 5px;
+                        cursor: pointer;
+
+                        @media (max-width: 1760px) {
+                            width: 22.5em;
+                            height: 22em;
+                        }
+
+                        @media (max-width: 1525px) {
+                            width: 18em;
+                            height: 18em;
+                        }
+
+                        @media (max-width: 1350px) {
+                            width: 15em;
+                            height: 15em;
+                        }
+                    }
+
+                    .small-card-size {
+                        width: 27em;
+                        height: 27em;
+                        cursor: pointer;
+
+                        @media (max-width: 1760px) {
+                            width: 23em;
+                            height: 22em;
+                        }
+
+                        @media (max-width: 1525px) {
+                            width: 18.5em;
+                            height: 18em;
+                        }
+
+                        @media (max-width: 1350px) {
+                            width: 15.4em;
+                            height: 15em;
+                        }
+                    }
+                }
+
+                .long-card-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .long-card-size {
+                        height: 52em;
+                        width: 32em;
+                        border-radius: 10px;
+                        cursor: pointer;
+
+                        @media (max-width: 1760px) {
+                            width: 28em;
+                            height: 44em;
+                        }
+
+                        @media (max-width: 1525px) {
+                            height: 36em;
+                        }
+
+                        @media (max-width: 1350px) {
+                            height: 30em;
+                        }
+                    }
+                }
+            }
+
+            .left-section {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                justify-content: center;
+                padding-right: 0;
+
+                &_small-cards-wrapper {
+                    display: flex;
+                    flex: 0.5;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    .small-card-shoes {
+                        width: 26em;
+                        height: 26em !important;
+                        cursor: pointer;
+
+                        @media (max-width: 1760px) {
+                            width: 23em;
+                            height: 22em !important;
+                        }
+
+                        @media (max-width: 1525px) {
+                            width: 18em;
+                            height: 18em !important;
+                        }
+
+                        @media (max-width: 1350px) {
+                            width: 15em;
+                            height: 15em !important;
+                        }
+                    }
+
+                    .small-card-size {
+                        height: 26.7em;
+                        width: 27em;
+                        cursor: pointer;
+
+                        @media (max-width: 1760px) {
+                            width: 23em;
+                            height: 22.5em;
+                        }
+
+                        @media (max-width: 1525px) {
+                            width: 18em;
+                            height: 18.5em;
+                        }
+
+                        @media (max-width: 1350px) {
+                            width: 15em;
+                            height: 15.3em;
+                        }
+                    }
+                }
+
+                &_long-card-wrapper {
+                    display: flex;
+                    flex: 0.5;
+
+                    .long-card-size {
+                        width: 53em;
+                        cursor: pointer;
+
+                        @media (max-width: 1760px) {
+                            width: 46em;
+                        }
+
+                        @media (max-width: 1525px) {
+                            width: 36em;
+                        }
+
+                        @media (max-width: 1350px) {
+                            width: 30em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

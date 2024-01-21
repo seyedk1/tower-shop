@@ -1,0 +1,16 @@
+@import "/src/assets/sass/variable";
+
+.products-descriptions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: flex-start;
+    padding: 1rem;
+
+    .description-text {
+        line-height: 2;
+        color: $mine-shaft;
+        font-size: 15px;
+        text-align: justify;
+    }
+}

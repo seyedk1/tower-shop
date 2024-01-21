@@ -1,0 +1,67 @@
+@import "/src/assets/sass/variable";
+
+.last-orders-card {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    position: relative;
+    margin: 1.5rem;
+
+    .parent-label-order {
+        display: flex;
+        justify-content: flex-end;
+
+        .order-label {
+            padding: 5px 15px;
+            border-radius: 5px;
+            color: $white;
+        }
+    }
+
+    .first-order-row {
+        border-bottom: 2px dashed;
+        border-bottom-color: rgba($color: $dove-gray, $alpha: 0.3);
+        padding-bottom: 10px;
+    }
+
+    .each-order-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem;
+
+        .parent-order-title {
+            display: flex;
+            align-items: center;
+
+            .order-title {
+                color: $mine-shaft;
+                margin-bottom: 0;
+                margin-right: 10px;
+            }
+        }
+
+        .parent-order-value {
+            display: flex;
+            align-items: center;
+
+            .order-value {
+                color: $mine-shaft;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .parent-details-order-btn {
+        position: absolute;
+        bottom: -22px;
+        right: 8rem;
+
+        .details-order-btn {
+            background-color: $pine-green;
+            color: $white;
+            border-radius: 10px;
+        }
+    }
+}

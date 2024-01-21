@@ -1,0 +1,83 @@
+@import "src/assets/sass/variable";
+
+.shop-bio-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 20px;
+
+    .title-bio-wrapper {
+        display: flex;
+        border-bottom: 1px solid;
+        border-color: rgba($color: $dove-gray, $alpha: 0.2);
+        padding-bottom: 6px;
+
+        .biography-icon {
+            margin-left: 10px;
+        }
+
+        .parent-title {
+            display: flex;
+            align-items: center;
+
+            h6 {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .parent-shop-description {
+        padding: 1rem;
+
+        p {
+            text-align: justify;
+            color: $mine-shaft;
+        }
+    }
+}
+
+.tags-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 20px;
+
+    .title-tags-wrapper {
+        display: flex;
+        border-bottom: 1px solid ;
+        border-color: rgba($color: $dove-gray, $alpha: 0.2);
+        padding-bottom: 6px;
+
+        .tags-icon {
+            margin-left: 10px;
+        }
+
+        .parent-title {
+            display: flex;
+            align-items: center;
+
+            h6 {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .parent-tags-label {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+
+        label {
+            background-color: $wild-sand;
+            border-radius: 5px;
+            padding: 5px 10px;
+            color: $mine-shaft;
+            margin: 5px 10px;
+        }
+    }
+}

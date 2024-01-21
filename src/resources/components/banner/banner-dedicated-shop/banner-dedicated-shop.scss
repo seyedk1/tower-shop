@@ -1,0 +1,199 @@
+@import "src/assets/sass/variable";
+
+#banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4em 0;
+    padding: 0 9em 0 6em;
+
+    .own-shop-banner {
+        display: flex;
+        flex: 1;
+        background-color: $white;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px 1px rgba(0, 0, 0, 0.16);
+        padding: 0;
+        overflow: hidden;
+
+        .right-section-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .parent-shop-logo {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .shop-logo {
+                    border-radius: 50%;
+                    width: 100px;
+                }
+            }
+
+            .parent-shop-title--slogan {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    margin-bottom: 0;
+                    color: $mine-shaft;
+                    padding-bottom: 10px;
+                }
+
+                .slogan-text {
+                    color: $pine-green;
+                }
+            }
+
+            .parent-other-info {
+                display: flex;
+                flex-direction: column;
+
+                .parent-shop-phone {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        color: $mine-shaft;
+                        font-size: 14px;
+                    }
+                }
+
+                .parent-shop-address {
+                    display: flex;
+                    justify-content: space-between;
+
+                    span {
+                        color: $mine-shaft;
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .left-section-wrapper {
+            display: flex;
+            background: url("../../../../assets/images/banner/own-shop-banner.jpg") no-repeat center center;
+            background-size: cover;
+            padding: 10em 0;
+            position: relative;
+
+            .parent-shop-stars {
+                position: absolute;
+                bottom: 1.5em;
+                right: 2em;
+            }
+
+            .parent-follow-button {
+                position: absolute;
+                left: 2em;
+                bottom: 1.5em;
+
+                .follow-btn {
+                    padding: 8px 1em;
+                    color: $white;
+                    background-color: transparent;
+                    border: 1px solid $white;
+                    border-radius: 10px;
+                    font-size: 13px;
+
+                    .follow-icon {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* responsive */
+
+@media (max-width: 1455px) {
+    .right-section-wrapper {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .left-section-wrapper {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 1015px) {
+    .right-section-wrapper {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+
+    .left-section-wrapper {
+        flex: 0 0 66.6666666667%;
+        max-width: 66.6666666667%;
+    }
+}
+
+@media (max-width: 841px) {
+    .right-section-wrapper {
+        flex: 0 0 41.6666666667%;
+        max-width: 41.6666666667%;
+    }
+
+    .left-section-wrapper {
+        flex: 0 0 58.3333333333%;
+        max-width: 58.3333333333%;
+    }
+}
+
+@media (max-width: 735px) {
+    .right-section-wrapper {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        .parent-shop-logo {
+            padding: 10px 0;
+        }
+
+        .parent-shop-title--slogan {
+            padding: 10px 0;
+        }
+
+        .parent-other-info {
+            align-items: center;
+            padding: 10px 0;
+
+            .parent-shop-phone {
+                span {
+                    margin-right: 10px;
+                }
+            }
+
+            .parent-shop-address {
+                span {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .left-section-wrapper {
+        display: none !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #banners {
+        padding: 0 3rem;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 360px) {
+    #banners {
+        padding: 0 1rem;
+    }
+}

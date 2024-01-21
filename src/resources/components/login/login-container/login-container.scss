@@ -1,0 +1,74 @@
+@import "/src/assets/sass/variable";
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+
+    .login-bg {
+        background: url("../../../../assets/images/login/background.png") repeat center center;
+        background-size: contain;
+        opacity: 0.1;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+    .login-card-wrapper {
+        display: flex;
+        flex: 0.7;
+        box-shadow: $box-shadow;
+        border-radius: 10px;
+        background-color: $white;
+        padding: 0;
+        overflow: hidden;
+
+        .parent-left-card {
+            display: flex;
+            flex: 0.5;
+            background: url("../../../../assets/images/login/mehr-koohsangi-bg.jpg") no-repeat center center;
+            background-size: cover;
+        }
+
+        .parent-right-card {
+            display: flex;
+            flex-direction: column;
+            flex: 0.5;
+            padding: 15px;
+
+            .parent-logo--text {
+                display: flex;
+                flex: 0.2;
+                flex-direction: column;
+
+                .parent-logo {
+                    display: flex;
+                    .logo-img {
+                        padding: 5px 15px;
+                        box-shadow: $box-shadow;
+                        border-radius: 10px;
+                    }
+                }
+
+                .parent-login-text {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+
+                    h5 {
+                        color: $pine-green;
+                    }
+                }
+            }
+
+           
+        }
+    }
+}

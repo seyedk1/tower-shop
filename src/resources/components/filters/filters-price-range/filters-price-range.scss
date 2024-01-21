@@ -1,0 +1,81 @@
+@import "src/assets/sass/variable";
+
+.filters-category-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &_header-content {
+        display: flex;
+        justify-content: space-between;
+        flex: 0.5;
+        padding: 10px 0;
+        background-color: $wild-sand;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .category-text {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            color: $pine-green;
+            text-decoration: none;
+        }
+
+        .icon-style {
+            margin-left: 20px;
+            margin-top: 5px;
+            font-size: 11px;
+        }
+
+        .rotate-icon {
+            transform: rotate(180deg);
+            transition: all ease-in-out 0.2s;
+        }
+    }
+
+    &_body-content {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+
+        .parent-price-range {
+            display: flex;
+            padding: 15px 10px;
+
+            .parent-from-price {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .from-price-input {
+                    border: 1px solid $wild-sand;
+                    height: 30px;
+                    border-radius: 5px;
+                    width: 75%;
+                    outline-style: none;
+                    padding: 0 5px;
+                    text-align: center;
+                }
+
+                .from-text {
+                    color: $mine-shaft;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .parent-range-price-slider {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 20px;
+        }
+    }
+
+    .category-filter-open--close {
+        display: none;
+        transition: height 0.3s;
+    }
+}

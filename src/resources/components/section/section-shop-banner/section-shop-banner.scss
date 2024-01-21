@@ -1,0 +1,45 @@
+@import "src/assets/sass/media";
+
+#banners {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4em 0;
+
+    .banners-wrapper {
+        display: flex;
+        flex: 1;
+        padding: 0 7em 0 4em;
+
+        .left-banner {
+            display: flex;
+
+        }
+
+        .right-banner {
+            display: flex;
+            flex-direction: column;
+
+        }
+    }
+}
+
+/* responsive */
+
+@media (max-width: 1272px) {
+    .banners-wrapper {
+        padding: 0 1em !important;
+    }
+}
+
+@include breakpoint(large) {
+    #banners {
+        margin: 1em 0 !important;
+    }
+}
+
+@media(max-width:576px){
+    .banners-wrapper{
+        padding: 0 !important;
+    }
+}

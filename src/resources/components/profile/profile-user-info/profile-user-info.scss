@@ -1,0 +1,154 @@
+@import "/src/assets/sass/variable";
+
+.user-info-card-wrapper {
+    display: flex;
+    flex: 1;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 0.75rem;
+
+    .parent-profile-user-image--edit-btn {
+        display: flex;
+        flex: 0.4;
+        justify-content: space-between;
+        border-left: 2px dashed;
+        border-left-color: rgba($color: $dove-gray, $alpha: 0.3);
+        padding: 1rem;
+
+        .parent-profile-user-image {
+            display: flex;
+
+            .parent-img-profile {
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+
+                .profile-img {
+                    border-radius: 50%;
+                    width: 9rem;
+                    background-color: $white;
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            .parent-user-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 1rem;
+            }
+        }
+
+        .parent-profile-edit-btn {
+            display: flex;
+            align-items: center;
+
+            .edit-profile-btn {
+                background-color: $pine-green;
+                color: $white;
+            }
+        }
+    }
+
+    .parent-user-other-info {
+        display: flex;
+        flex: 0.6;
+        flex-wrap: wrap;
+
+        .each-user-info {
+            display: flex;
+            align-items: center;
+
+            .info-title {
+                color: $mine-shaft;
+                text-align: right;
+                font-size: 15px;
+                padding-right: 1rem;
+                margin-bottom: 0;
+
+                .info-value {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .parent-edit-profile {
+        display: flex;
+        flex: 1;
+
+        .parent-edit-img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0.2;
+
+            .user-img {
+                width: 10rem;
+            }
+        }
+
+        .parent-edit-user-info {
+            display: flex;
+            flex: 0.8;
+            flex-direction: column;
+            align-items: center;
+
+            .user-info-first-row {
+                display: flex;
+                flex: 1;
+                width: 100%;
+                margin: 1rem;
+
+                .parent-input {
+                    display: flex;
+                    position: relative;
+                    margin: 0 1rem;
+
+                    .input-label {
+                        position: absolute;
+                        top: -2px;
+                        right: 35px;
+                        background-color: $white;
+                        padding: 0 12px;
+                        color: rgba($color: $dove-gray, $alpha: 0.8);
+                    }
+
+                    .name-family {
+                        border: 1px solid;
+                        border-color: rgba($color: $dove-gray, $alpha: 0.5);
+                        border-radius: 7px;
+                        padding: 15px 4rem;
+                        outline-style: none;
+                    }
+
+                    .address-input {
+                        width: 92%;
+                    }
+
+                    .input-icon {
+                        position: absolute;
+                        top: 30px;
+                        right: 1.5rem;
+                    }
+                }
+            }
+
+            .parent-submit-btn-changes {
+                display: flex;
+                flex: 1;
+                width: 100%;
+                justify-content: flex-end;
+                margin-left: 3.5rem;
+
+                .submit-btn-changes {
+                    background-color: $pine-green;
+                    color: $white;
+                    padding: 10px 25px;
+                }
+            }
+        }
+    }
+}
